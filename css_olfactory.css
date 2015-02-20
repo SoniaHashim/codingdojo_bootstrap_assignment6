@@ -3,7 +3,97 @@ Author: Sonia Hashim
 Date  : 02/19/15
 Notes : css (with BOOTSTRAP) for ol.factory home page 
 ---------------------------------------------------------------*/
+body {
+	background-image: url("subtle-pattern-2.jpg");
+}
 
-#navigation li {
-				display: inline;
-    		}
+a {
+	color: #49C46F;
+	text-shadow: 1px 1px 0px #fff; 
+}
+
+p {
+	color: #5c5f72;
+
+}
+
+
+	h1 {
+		color: #DB6552;
+		text-shadow: 2px 2px 0px #fff, 4px 4px 0px #5c5f72;
+	}
+
+		.btn-default {
+			color: #000;
+			text-shadow: 1px 1px 0px #5c5f72;
+			background-image: -webkit-linear-gradient(bottom,#45B868 0,#58EB85 100%);
+		}
+
+		.btn-default {
+			font-weight: bold; 
+			background: #DB8D88;
+			color: rgba(0,0,0,0.6);
+    		text-shadow: 1px 1px 2px rgba(255,255,255,0.1);
+		}
+
+		.btn-success {
+			color: #DDD;
+			background-image: -webkit-linear-gradient(bottom,#45B868 0,#58EB85 100%);
+			border-color:#49C46F;
+			border-radius: 20px;
+
+			font-weight: 400;
+		}
+
+		#navigation li {
+			display: inline;
+		}
+
+	h2 {
+		color: #000;
+		text-shadow: 2px 2px 0px #5c5f72;
+	}
+
+	.text-danger {
+		color: #DB6552;
+		text-shadow: 1px 1px 0px #fff; 
+	}
+
+	h3 {
+		background-color: #666666;
+	    -webkit-background-clip: text;
+	    -moz-background-clip: text;
+	    background-clip: text;
+	    color: transparent;
+	    text-shadow: rgba(255,255,255,0.5) 0px 3px 3px;
+	    text-align: center;
+	}
+
+		.table-striped td {
+			padding-left: 4px;
+			color: #999;
+		}
+
+
+	.btn-primary {
+		font-weight: bold; 
+		background: #DB6552;
+		border-color: #AD5041;
+		color: rgba(0,0,0,0.6);
+		text-shadow: 1px 1px 2px rgba(255,255,255,0.1);
+
+		border-radius: 20px;
+	}
+
+	.table-hover td {
+		background-color: #666666;
+	    -webkit-background-clip: text;
+	    -moz-background-clip: text;
+	    background-clip: text;
+	    color: transparent;
+	    text-shadow: rgba(255,255,255,0.5) 0px 3px 3px;
+	    text-align: right;
+	}
+	}
+
+
