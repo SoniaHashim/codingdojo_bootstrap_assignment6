@@ -5,16 +5,327 @@ Date: 02/17/15
 Notes: proper html recreation of screenshot of 
 		PPC Lubricants -->
 
+<!-- 	ASSIGNMENT CHECKLIST:
+		 Grid system (for positioning and sizing of elements):
+			x container
+			x row
+			x col-md-4
+			x col-md-offset-2
+
+		 Text alignment:
+			x text-left
+			x text-center
+			x text-right
+
+			Text colors:
+			x text-primary
+			x text-success // w/o JS these are out of place 
+			x text-danger  // w/o JS these are out of place
+
+			Tables:
+			x table
+			x table-striped
+			x table-hover
+
+			Buttons:
+			x btn
+			x btn-default
+			x btn-primary  
+			x btn-success // once again, no JS
+
+			Components: 
+			x Create a button dropdown
+			x Use a jumbotron element 
+			x dismissible alert -->
+
 <html>
 	<head>
 		<meta charset = "utf-8">
-    	<title>PPC Lubricants</title>
-    	<meta name = "description" content = "proper HTML breakdown of PPC Lubricant screenshot"> 
-    	<link rel="stylesheet" type="text/css" href="css_ppclubricant.css">
+    	<title>ol.factory home</title>
+    	<meta name = "description" content = "homepage of ol.factory"> 
+    	<link rel="stylesheet" type="text/css" href="css_olfactory.css">
+
+    	<!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+
+		<!-- Optional theme -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+
+		<!-- Latest compiled and minified JavaScript -->
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
 	</head>
 	<body>
-<!-- Latest compiled and minified CSS --> 
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="stylesheet" href=“http://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css”>
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script> 
-<script src=“http://netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
+		<div class="container-fluid">
+			<!-- FIRST ROW (HEADER) -->
+			<div class="row">
+				<!-- LOGO BOX -->
+				<div class="col-xs-6 col-md-4" id="logo">
+					<p class="jumbotron" class="text-danger">motto</p>
+					<h1 class="text-center">ol.factory</h1>
+				<!-- END OF LOGO BOX -->
+				</div>
+
+				<!-- NAVIGATION BAR  -->
+  				<ul class="col-xs-6 col-md-4" class="text-success text-lowercase text-middle" id="navigation">
+  					<li><a class="btn btn-default" href="#" role="button">Home</a></li>
+  					<li><a class="btn btn-default" href="#" role="button">About</a></li>
+  					<li><a class="btn btn-success" href="#" role="button">Kickstarter Campaign</a></li>
+  					<li><a class="btn btn-default" href="#" role="button">Create</a></li>
+  					<li><a class="btn btn-default" href="#" role="button">Learn</a></li>
+				<!-- END OF NAVIGATION BAR  -->
+  				</ul>
+
+  				<!-- SEARCH BAR  -->
+  				<div class="col-xs-6 col-md-4" class="text-right">
+  					<a class="btn btn-success" href="#" role="button">Search</a>
+  				</div>
+
+			<!-- END OF FIRST ROW (HEADER) -->
+			</div>
+
+			<div class="row">
+				<!-- DIV: CONTENT FLAG (SCENT STARTER) -->
+				<div class="col-xs-8 col-xs-offset-2 col-md-4 col-md-offset-0" class="text-left" class="content-flag">
+					<h2>hope</h2>
+					<p>text</p> 
+					<a href="#">link here</a>
+				</div>
+
+				<!-- DIV: CONTENT FLAG (SCENT STARTER) -->
+				<div class="col-xs-8 col-xs-offset-2 col-md-4 col-md-offset-0" class="text-left" class="content-flag">
+					<h2>hope</h2>
+					<p>text</p> 
+					<a href="#">link here</a>
+				</div>
+
+			<!-- END OF SECOND ROW (INFORMATION FLAGS) -->
+			</div>
+
+			<div class="row">
+				<!-- IMG: DECOR_IMG -->
+				<img class="col-xs-8" src="#" alt="decor-img">
+				<!-- DESIGNERS: TABLE STRIPED (3x9) -->
+				<table class=".table table-striped" class="col-xs-4 col-md-2" class="text-primary"> DESIGNER TABLE
+					<tr>
+						<td><p class="text-right"></p></td>
+						<td><p class="text-left"></p></td>
+						<td></td>
+					</tr>
+					<tr>
+						<td><p class="text-right"></p></td>
+						<td><p class="text-left"></p></td>
+						<td></td>
+					</tr>
+					<tr>
+						<td class="text-right"></td>
+						<td class="text-left"></td>
+						<td></td>
+					</tr>
+					<tr>
+						<td class="text-right"></td>
+						<td class="text-left"></td>
+						<td></td>
+					</tr>
+					<tr>
+						<td class="text-right"></td>
+						<td class="text-left"></td>
+						<td></td>
+					</tr>
+					<tr>
+						<td class="text-right"></td>
+						<td class="text-left"></td>
+						<td></td>
+					</tr>
+					<tr>
+						<td class="text-right"></td>
+						<td class="text-left"></td>
+						<td></td>
+					</tr>
+					<tr>
+						<td class="text-right"></td>
+						<td class="text-left"></td>
+						<td></td>
+					</tr>
+					<tr>
+						<td class="text-right"></td>
+						<td class="text-left"></td>
+						<td></td>
+					</tr>
+				<!-- END OF TABLE: DESIGNERS  -->
+				</table>
+			<!-- END OF THIRD ROW (PAGE DECOR) -->
+			</div>
+
+			<div class="row">
+				<!-- DIV: SCENT STARTER & TABLE -->
+				<div class="col-xs-8" class="text-right">
+					<!-- DIV: CONTENT FLAG (SCENT STARTER) -->
+					<div class="col-xs-12 col-md-5 col-md-offset-7" class="content-flag">
+						<span class="text-right">
+							<h2>hope</h2>
+							<p>text</p> 
+						</span>
+					</div>
+					<div class="col-xs-12">
+						<!-- SCENTS: TABLE HOVER (4x15) -->
+						<table class="table table-hover" class="text-left"> 
+							<tr>
+								<th class="text-center">
+									<a class="btn btn-primary" href="#" role="button">TH2</a>
+								</th>
+								<th class="text-center">
+									<a class="btn btn-primary" href="#" role="button">TH3</a>
+								</th>	
+								<th class="text-center">
+									<a class="btn btn-primary">TH3</a>
+								</th>
+								<th class="text-center">
+									<a class="btn btn-primary" href="#" role="button">TH4</a>
+								</th>
+							</tr>
+							<tr>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+							</tr>
+							<tr>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+							</tr>
+							<tr>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+							</tr>
+							<tr>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+							</tr>
+							<tr>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+							</tr>
+							<tr>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+							</tr>
+							<tr>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+							</tr>
+							<tr>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+							</tr>
+							<tr>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+							</tr>
+							<tr>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+							</tr>
+							<tr>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+							</tr>
+							<tr>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+							</tr>
+							<tr>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+							</tr>
+							<tr>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+							</tr>
+						<!-- END OF TABLE: SCENTS  -->
+						</table>
+					</div>
+				</div>
+
+				<!-- DIV: LH CONTENT FLAG (SCENT STARTER) -->
+				<div class="col-xs-8 col-xs-offset-2 col-md-4 col-md-offset-0">
+					<!-- CONTENT FLAG  -->
+					<div class="col-xs-12" class="text-left" class="content-flag">
+						<h2>hope</h2>
+						<p>text</p> 
+						<a href="#">link here</a>
+					</div>
+
+					<!-- CLEARFIX: SPACER FOR MD -->
+					<div class="col-md-12"class="clearfix visible-md-block">SPACER</div>
+
+					<div class="row">
+						<!-- DROPDOWN: CONTACT MENU -->
+						<div class="col-xs-3" class="dropdown">
+							<span class="text-left">
+							  <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">
+							    Contact Us
+							  </button>
+							  <ul class="dropdown-menu" role="menu">
+							    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Action</a></li>
+							    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Another action</a></li>
+							    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Something else here</a></li>
+							    <li role="presentation" class="divider"></li>
+							    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Separated link</a></li>
+							  </ul>
+							</span>
+						<!-- END OF DROPDOWN CONTACT MENU -->
+						</div>
+
+						<!-- ALERT: #WCW - ERICA PORTNOY -->
+						<div class="col-xs-6" class="text-right">
+							 <div class="alert alert-info alert-dismissible" role="alert">
+							  <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+							  <strong>#WCW </strong>Erica Portnoy! 
+						    </div>
+					    <!-- END OF ALERT #WCW -->
+						</div>
+
+					</div>
+				</div>
+
+			<!-- END OF ROW -->
+			</div>
+
+			<div class="row">
+				
+
+				
+			<!-- END OF SIXTH ROW (FOOTER) -->
+			</div>
+		<!-- END OF CONTAINER  -->
+		</div>
+
+	</body>
+
+</html>

@@ -3,3 +3,7 @@ Author: Sonia Hashim
 Date  : 02/19/15
 Notes : css (with BOOTSTRAP) for ol.factory home page 
 ---------------------------------------------------------------*/
+
+#navigation li {
+				display: inline;
+    		}
